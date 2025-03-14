@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.contact-info i {
+    color: #2c3e50;
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+ul.achievements {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+ul.achievements li {
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.school {
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.details {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skills-grid ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.skills-grid li {
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+
+#certifications ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+#certifications li {
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .job-header, .education-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+}
